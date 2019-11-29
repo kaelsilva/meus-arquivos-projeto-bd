@@ -37,3 +37,13 @@ WHERE e.local LIKE '%Caicó%';
 SELECT DISTINCT f.nome
 FROM Funcionario f JOIN Notafiscal nf ON nf.id_Funcionario = f.id_Funcionario
 WHERE nf.quantidade = 50;
+
+# Selecionar as quantidades de produtos vendidos nas notas fiscais 1, 6 e 7.
+SELECT DISTINCT nf.id, nf.quantidade
+FROM Notafiscal nf
+WHERE nf.id IN (1, 6, 7);
+
+# Selecionar o id do cliente responsável pela sugestão cujo id de protocolo é menor que 230.
+SELECT DISTINCT s.id_protocolo,s.id_cliente
+FROM Sugestao s
+WHERE s.id_protocolo < 230;
