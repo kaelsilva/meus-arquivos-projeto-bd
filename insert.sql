@@ -1,27 +1,24 @@
+# Povoamento da tabela InfoUsuario
 INSERT INTO InfoUsuario (cpf,cidade,bairro,rua,celular)VALUES('70866037080','saojoao','fsdfsdfsfatheus',"rewrw",99832710);
 INSERT INTO InfoUsuario (cpf,cidade,bairro,rua,celular)VALUES('59329309003','saojoao','fsdfsdfsfatheus',"rewrw",99832710);
 INSERT INTO InfoUsuario (cpf,cidade,bairro,rua,celular)VALUES('37554935003','saojoao','fsdfsdfsfatheus',"rewrw",99832710);
 INSERT INTO InfoUsuario (cpf,cidade,bairro,rua,celular)VALUES('98510021007','saojoao','fsdfsdfsfatheus',"rewrw",99832710);
 INSERT INTO InfoUsuario (cpf,cidade,bairro,rua,celular)VALUES('82302328060','saojoao','fsdfsdfsfatheus',"rewrw",99832710);
-#----------------------------------------------usuario GERENTE abaixo------------------------------------------------------
 INSERT INTO InfoUsuario (cpf,cidade,bairro,rua,celular)VALUES('17207482094','caico','fsdfsdfsfatheus',"rewrw",99832710);
 INSERT INTO InfoUsuario (cpf,cidade,bairro,rua,celular)VALUES('86560547086','caico','fsdfsdfsfatheus',"rewrw",99832710);
 INSERT INTO InfoUsuario (cpf,cidade,bairro,rua,celular)VALUES('28392143000','caico','fsdfsdfsfatheus',"rewrw",99832710);
 INSERT INTO InfoUsuario (cpf,cidade,bairro,rua,celular)VALUES('94200409097','caico','fsdfsdfsfatheus',"rewrw",99832710);
 INSERT INTO InfoUsuario (cpf,cidade,bairro,rua,celular)VALUES('08316838052','caico','fsdfsdfsfatheus',"rewrw",99832710);
-#----------------------------------------------usuario FUNCIONARIO abaixo------------------------------------------------------
 INSERT INTO InfoUsuario (cpf,cidade,bairro,rua,celular)VALUES('59635121075','saojoao','fsdfsdfsfatheus',"rewrw",99832710);
 INSERT INTO InfoUsuario (cpf,cidade,bairro,rua,celular)VALUES('69087579004','saojoao','fsdfsdfsfatheus',"rewrw",99832710);
 INSERT INTO InfoUsuario (cpf,cidade,bairro,rua,celular)VALUES('60205634052','saojoao','fsdfsdfsfatheus',"rewrw",99832710);
 INSERT INTO InfoUsuario (cpf,cidade,bairro,rua,celular)VALUES('25435549043','saojoao','fsdfsdfsfatheus',"rewrw",99832710);
 INSERT INTO InfoUsuario (cpf,cidade,bairro,rua,celular)VALUES('88281851040','saojoao','fsdfsdfsfatheus',"rewrw",99832710);
-#----------------------------------------------usuario FORNECEDOR abaixo------------------------------------------------------
 INSERT INTO InfoUsuario (cpf,cidade,bairro,rua,celular)VALUES('1111111111','saojoao','fsdfsdfsfatheus',"rewrw",99832710);
 INSERT INTO InfoUsuario (cpf,cidade,bairro,rua,celular)VALUES('1111111112','saojoao','fsdfsdfsfatheus',"rewrw",99832710);
 INSERT INTO InfoUsuario (cpf,cidade,bairro,rua,celular)VALUES('1111111113','saojoao','fsdfsdfsfatheus',"rewrw",99832710);
 INSERT INTO InfoUsuario (cpf,cidade,bairro,rua,celular)VALUES('1111111114','saojoao','fsdfsdfsfatheus',"rewrw",99832710);
 INSERT INTO InfoUsuario (cpf,cidade,bairro,rua,celular)VALUES('1111111115','saojoao','fsdfsdfsfatheus',"rewrw",99832710);
-# Adicionando mais InfoUsuario para não dar erro em insert de gerente
 INSERT INTO InfoUsuario (cpf,cidade,bairro,rua,celular) VALUES ('44020989044','caico','fsdfsdfsfatheus',"rewrw",99832710);
 INSERT INTO InfoUsuario (cpf,cidade,bairro,rua,celular) VALUES ('74993374054','caico','fsdfsdfsfatheus',"rewrw",99832710);
 INSERT INTO InfoUsuario (cpf,cidade,bairro,rua,celular) VALUES ('52071825012','caico','fsdfsdfsfatheus',"rewrw",99832710);
@@ -32,7 +29,6 @@ INSERT INTO InfoUsuario (cpf,cidade,bairro,rua,celular) VALUES ('61780022034','c
 INSERT INTO InfoUsuario (cpf,cidade,bairro,rua,celular) VALUES ('08337980060','caico','fsdfsdfsfatheus',"rewrw",99832710);
 INSERT INTO InfoUsuario (cpf,cidade,bairro,rua,celular) VALUES ('17904028085','caico','fsdfsdfsfatheus',"rewrw",99832710);
 INSERT INTO InfoUsuario (cpf,cidade,bairro,rua,celular) VALUES ('65307871007','caico','fsdfsdfsfatheus',"rewrw",99832710);
-# Adicionando mais InfoUsuario para não dar erro em insert de cliente
 INSERT INTO InfoUsuario (cpf,cidade,bairro,rua,celular) VALUES ('48171795030','caico','fsdfsdfsfatheus',"rewrw",99832710);
 INSERT INTO InfoUsuario (cpf,cidade,bairro,rua,celular) VALUES ('43506429000','caico','fsdfsdfsfatheus',"rewrw",99832710);
 INSERT INTO InfoUsuario (cpf,cidade,bairro,rua,celular) VALUES ('15231619060','caico','fsdfsdfsfatheus',"rewrw",99832710);
@@ -43,7 +39,6 @@ INSERT INTO InfoUsuario (cpf,cidade,bairro,rua,celular) VALUES ('92266592068','c
 INSERT INTO InfoUsuario (cpf,cidade,bairro,rua,celular) VALUES ('62288393068','caico','fsdfsdfsfatheus',"rewrw",99832710);
 INSERT INTO InfoUsuario (cpf,cidade,bairro,rua,celular) VALUES ('58698089011','caico','fsdfsdfsfatheus',"rewrw",99832710);
 INSERT INTO InfoUsuario (cpf,cidade,bairro,rua,celular) VALUES ('92727759061','caico','fsdfsdfsfatheus',"rewrw",99832710);
-# Adicionando mais InfoUsuario para não dar erro em insert de funcionario
 INSERT INTO InfoUsuario (cpf,cidade,bairro,rua,celular) VALUES ('80937404063','saojoao','fsdfsdfsfatheus',"rewrw",99832710);
 INSERT INTO InfoUsuario (cpf,cidade,bairro,rua,celular) VALUES ('57655366039','saojoao','fsdfsdfsfatheus',"rewrw",99832710);
 INSERT INTO InfoUsuario (cpf,cidade,bairro,rua,celular) VALUES ('94669137000','saojoao','fsdfsdfsfatheus',"rewrw",99832710);
@@ -242,22 +237,3 @@ INSERT INTO ListaDeVendas(c_idgerada, id_pedido, hora, status) VALUES (12, 12, '
 INSERT INTO ListaDeVendas(c_idgerada, id_pedido, hora, status) VALUES (13, 13, '09:12:26', 'Em aberto');
 INSERT INTO ListaDeVendas(c_idgerada, id_pedido, hora, status) VALUES (14, 14, '09:12:27', 'Em aberto');
 INSERT INTO ListaDeVendas(c_idgerada, id_pedido, hora, status) VALUES (15, 15, '09:12:28', 'Em aberto');
-
-#----------------------------------------------CONSULTAS-------------------------------------------------------
-#mostrar tabelas e consultas
-#mostra todos os atributos que empregados tem cadastrados
-select * from InfoUsuario;
-select * from Cliente;
-select * from Gerente;
-select * from Loja;
-#-----------------pra tras ja preencheu
-select * from Fornecedor;
-select * from Funcionario;
-select * from Produto;
-select * from Pedido;
-select * from Estoque;
-select * from Sugestao;
-select * from Notafiscal;
-select * From ListaDeVendas;
-
-
