@@ -43,10 +43,20 @@ INSERT INTO InfoUsuario (cpf,cidade,bairro,rua,celular) VALUES ('92266592068','c
 INSERT INTO InfoUsuario (cpf,cidade,bairro,rua,celular) VALUES ('62288393068','caico','fsdfsdfsfatheus',"rewrw",99832710);
 INSERT INTO InfoUsuario (cpf,cidade,bairro,rua,celular) VALUES ('58698089011','caico','fsdfsdfsfatheus',"rewrw",99832710);
 INSERT INTO InfoUsuario (cpf,cidade,bairro,rua,celular) VALUES ('92727759061','caico','fsdfsdfsfatheus',"rewrw",99832710);
+# Adicionando mais InfoUsuario para não dar erro em insert de funcionario
+INSERT INTO InfoUsuario (cpf,cidade,bairro,rua,celular) VALUES ('80937404063','saojoao','fsdfsdfsfatheus',"rewrw",99832710);
+INSERT INTO InfoUsuario (cpf,cidade,bairro,rua,celular) VALUES ('57655366039','saojoao','fsdfsdfsfatheus',"rewrw",99832710);
+INSERT INTO InfoUsuario (cpf,cidade,bairro,rua,celular) VALUES ('94669137000','saojoao','fsdfsdfsfatheus',"rewrw",99832710);
+INSERT INTO InfoUsuario (cpf,cidade,bairro,rua,celular) VALUES ('54441345003','saojoao','fsdfsdfsfatheus',"rewrw",99832710);
+INSERT INTO InfoUsuario (cpf,cidade,bairro,rua,celular) VALUES ('43438518007','saojoao','fsdfsdfsfatheus',"rewrw",99832710);
+INSERT INTO InfoUsuario (cpf,cidade,bairro,rua,celular) VALUES ('64052763092','saojoao','fsdfsdfsfatheus',"rewrw",99832710);
+INSERT INTO InfoUsuario (cpf,cidade,bairro,rua,celular) VALUES ('11400242053','saojoao','fsdfsdfsfatheus',"rewrw",99832710);
+INSERT INTO InfoUsuario (cpf,cidade,bairro,rua,celular) VALUES ('00911240004','saojoao','fsdfsdfsfatheus',"rewrw",99832710);
+INSERT INTO InfoUsuario (cpf,cidade,bairro,rua,celular) VALUES ('03342277041','saojoao','fsdfsdfsfatheus',"rewrw",99832710);
+INSERT INTO InfoUsuario (cpf,cidade,bairro,rua,celular) VALUES ('89114682079','saojoao','fsdfsdfsfatheus',"rewrw",99832710);
 
-#@@@@@@@@@@@@@@@@ atributos PK com auto incremente nem precisa colocar
 
-#CLIENTE É UM usuario e nem todo usuario é cliente
+# Povoamento da tabela Cliente
 INSERT INTO Cliente(id_cliente, nome, cpf) VALUES (1, 'Fulano Pereira', '70866037080');
 INSERT INTO Cliente(id_cliente, nome, cpf) VALUES (2, 'Sicrano Pereira', '59329309003');
 INSERT INTO Cliente(id_cliente, nome, cpf) VALUES (3, 'Beltrano Pereira', '37554935003');
@@ -63,7 +73,7 @@ INSERT INTO Cliente(id_cliente, nome, cpf) VALUES (13, 'Evandro Pereira', '62288
 INSERT INTO Cliente(id_cliente, nome, cpf) VALUES (14, 'Roberto Pereira', '58698089011');
 INSERT INTO Cliente(id_cliente, nome, cpf) VALUES (15, 'Raíssa Pereira', '92727759061');
 
-#gerente É UM usuario e nem todo usuario é gerente
+# Povoamento da tabela Gerente
 INSERT INTO Gerente(id_gerente, nome, cpf) VALUES (1, 'Ronaldo Nazário', '17207482094');
 INSERT INTO Gerente(id_gerente, nome, cpf) VALUES (2, 'Roberto Nazário', '86560547086');
 INSERT INTO Gerente(id_gerente, nome, cpf) VALUES (3, 'Rômulo Nazário', '28392143000');
@@ -80,18 +90,41 @@ INSERT INTO Gerente(id_gerente, nome, cpf) VALUES (13, 'José Nazário', '083379
 INSERT INTO Gerente(id_gerente, nome, cpf) VALUES (14, 'Jair Nazário', '17904028085');
 INSERT INTO Gerente(id_gerente, nome, cpf) VALUES (15, 'Joaquim Nazário', '65307871007');
 
+# Povoamento da tabela Fornecedor
 INSERT INTO Fornecedor(cnpj,cpf,nome) VALUES ('30090201000198', '11111111111','Papelaria X');
 INSERT INTO Fornecedor(cnpj,cpf,nome) VALUES ('43522144000110', '11111111112', 'Moda Tecidos');
 INSERT INTO Fornecedor(cnpj,cpf,nome) VALUES ('09969062000180', '11111111113', 'Fulano Roupas');
 INSERT INTO Fornecedor(cnpj,cpf,nome) VALUES ('51907577000112', '11111111114', 'Y Calçados');
 INSERT INTO Fornecedor(cnpj,cpf,nome) VALUES ('76606876000148', '11111111115', 'ABC Bonés');
+INSERT INTO Fornecedor(cnpj,cpf,nome) VALUES ('80336058000140', '11111111116','Roupas X');
+INSERT INTO Fornecedor(cnpj,cpf,nome) VALUES ('36043565000101', '11111111117', 'J Shorts');
+INSERT INTO Fornecedor(cnpj,cpf,nome) VALUES ('09877470000102', '11111111118', 'Fulano Malhas');
+INSERT INTO Fornecedor(cnpj,cpf,nome) VALUES ('07730552000102', '11111111119', 'Y Tecidos');
+INSERT INTO Fornecedor(cnpj,cpf,nome) VALUES ('25356365000184', '11111111110', 'ABC Unhas');
+INSERT INTO Fornecedor(cnpj,cpf,nome) VALUES ('76087219000131', '11111111120','Acessórios Novos');
+INSERT INTO Fornecedor(cnpj,cpf,nome) VALUES ('79861089000130', '11111111122', 'Moda Casual');
+INSERT INTO Fornecedor(cnpj,cpf,nome) VALUES ('38090368000160', '11111111123', 'Fulano Nova Moda');
+INSERT INTO Fornecedor(cnpj,cpf,nome) VALUES ('22971415000145', '11111111124', 'Y Pulseiras');
+INSERT INTO Fornecedor(cnpj,cpf,nome) VALUES ('40449582000102', '11111111125', 'ABC Relógios');
 
+# Povoamento da tabela Funcionario
 INSERT INTO Funcionario(id_funcionario, nome, cpf) VALUES (1, 'Luiz Medeiros', '59635121075');
 INSERT INTO Funcionario(id_funcionario, nome, cpf) VALUES (2, 'Maria Medeiros', '69087579004');
 INSERT INTO Funcionario(id_funcionario, nome, cpf) VALUES (3, 'Larissa Medeiros', '60205634052');
 INSERT INTO Funcionario(id_funcionario, nome, cpf) VALUES (4, 'Lucas Medeiros', '25435549043');
 INSERT INTO Funcionario(id_funcionario, nome, cpf) VALUES (5, 'Pedro Medeiros', '88281851040');
+INSERT INTO Funcionario(id_funcionario, nome, cpf) VALUES (6, 'José Medeiros', '80937404063');
+INSERT INTO Funcionario(id_funcionario, nome, cpf) VALUES (7, 'Joaquim Medeiros', '57655366039');
+INSERT INTO Funcionario(id_funcionario, nome, cpf) VALUES (8, 'João Medeiros', '94669137000');
+INSERT INTO Funcionario(id_funcionario, nome, cpf) VALUES (9, 'Patrícia Medeiros', '54441345003');
+INSERT INTO Funcionario(id_funcionario, nome, cpf) VALUES (10, 'Arthur Medeiros', '43438518007');
+INSERT INTO Funcionario(id_funcionario, nome, cpf) VALUES (11, 'Aline Medeiros', '64052763092');
+INSERT INTO Funcionario(id_funcionario, nome, cpf) VALUES (12, 'Aldair Medeiros', '11400242053');
+INSERT INTO Funcionario(id_funcionario, nome, cpf) VALUES (13, 'Luan Medeiros', '00911240004');
+INSERT INTO Funcionario(id_funcionario, nome, cpf) VALUES (14, 'Matheus Medeiros', '03342277041');
+INSERT INTO Funcionario(id_funcionario, nome, cpf) VALUES (15, 'Mathias Medeiros', '89114682079');
 
+# Povoamento da tabela Produto
 INSERT INTO Produto(id_item, nome, genero, tamanho, preco,cnpj_fornecedor) VALUES (1, 'Blusa X', 'F','gg', 21,'30090201000198');
 INSERT INTO Produto(id_item, nome, genero, tamanho, preco,cnpj_fornecedor) VALUES (2, 'Calça Y', 'M','eg',22,'43522144000110');
 INSERT INTO Produto(id_item, nome, genero, tamanho, preco,cnpj_fornecedor) VALUES (3, 'Camisa Z', 'F','g', 23,'09969062000180');
@@ -108,7 +141,7 @@ INSERT INTO Produto(id_item, nome, genero, tamanho, preco,cnpj_fornecedor) VALUE
 INSERT INTO Produto(id_item, nome, genero, tamanho, preco,cnpj_fornecedor) VALUES (14, 'Short AA', 'F','p',24,'51907577000112');
 INSERT INTO Produto(id_item, nome, genero, tamanho, preco,cnpj_fornecedor) VALUES (15, 'Calção BB', 'M','m',25,'76606876000148');
 
-##Aqui da erro ja
+# Povoamento da tabela Loja
 INSERT INTO Loja(cnpj, nome) VALUES ('97743249000129', 'Waypoint Moda System Center');
 INSERT INTO Loja(cnpj, nome) VALUES ('43291642000108', 'Waypoint Moda System South');
 INSERT INTO Loja(cnpj, nome) VALUES ('91187394000194', 'Waypoint Moda System North');
@@ -125,7 +158,7 @@ INSERT INTO Loja(cnpj, nome) VALUES ('64903687000158', 'Waypoint Moda System Nor
 INSERT INTO Loja(cnpj, nome) VALUES ('52444348000171', 'Waypoint Moda System East III');
 INSERT INTO Loja(cnpj, nome) VALUES ('98046776000147', 'Waypoint Moda System West III');
 
-
+# Povoamento da tabela Estoque
 INSERT INTO Estoque(id, local, cnpj, id_item, descricao, data_abastecimento) VALUES (231, 'Parelhas', '97743249000129', 1, 'Blusas Femininas P', '2019-02-26');
 INSERT INTO Estoque(id, local, cnpj, id_item, descricao, data_abastecimento) VALUES (232, 'Caicó', '43291642000108', 2, 'Blusas Femininas M', '2019-02-26');
 INSERT INTO Estoque(id, local, cnpj, id_item, descricao, data_abastecimento) VALUES (233, 'Açu', '91187394000194', 3, 'Blusas Femininas G', '2019-02-26');
@@ -142,7 +175,7 @@ INSERT INTO Estoque(id, local, cnpj, id_item, descricao, data_abastecimento) VAL
 INSERT INTO Estoque(id, local, cnpj, id_item, descricao, data_abastecimento) VALUES (244, 'Natal', '81289276000133', 4, 'Blusas Masculinas GG', '2019-02-26');
 INSERT INTO Estoque(id, local, cnpj, id_item, descricao, data_abastecimento) VALUES (245, 'Parelhas', '28662340000105', 5, 'Blusas Masculinas XG', '2019-02-26');
 
-
+# Povoamento da tabela Sugestao
 INSERT INTO Sugestao(id_protocolo, id_cliente, email) VALUES (222, '1', 'fulano@gmail.com');
 INSERT INTO Sugestao(id_protocolo, id_cliente, email) VALUES (223, '2', 'fulano1@gmail.com');
 INSERT INTO Sugestao(id_protocolo, id_cliente, email) VALUES (224, '3', 'fulano2@gmail.com');
@@ -159,7 +192,7 @@ INSERT INTO Sugestao(id_protocolo, id_cliente, email) VALUES (234, '13', 'fulano
 INSERT INTO Sugestao(id_protocolo, id_cliente, email) VALUES (235, '14', 'fulano13@gmail.com');
 INSERT INTO Sugestao(id_protocolo, id_cliente, email) VALUES (236, '15', 'fulano14@gmail.com');
 
-
+# Povoamento da tabela Notafiscal
 INSERT INTO Notafiscal(id, id_item, quantidade, id_Funcionario) VALUES (1, 1, 10, 1);
 INSERT INTO Notafiscal(id, id_item, quantidade, id_Funcionario) VALUES (2, 2, 20, 2);
 INSERT INTO Notafiscal(id, id_item, quantidade, id_Funcionario) VALUES (3, 3, 30, 3);
@@ -176,7 +209,7 @@ INSERT INTO Notafiscal(id, id_item, quantidade, id_Funcionario) VALUES (13, 13, 
 INSERT INTO Notafiscal(id, id_item, quantidade, id_Funcionario) VALUES (14, 14, 40, 4);
 INSERT INTO Notafiscal(id, id_item, quantidade, id_Funcionario) VALUES (15, 15, 50, 5);
 
-
+# Povoamento da tabela Pedido
 INSERT INTO Pedido(id_pedido, id_cliente, id_item, quantidade, data_pedido, preco) VALUES (1, 1, 1, 10, '2019-11-28', 100);
 INSERT INTO Pedido(id_pedido, id_cliente, id_item, quantidade, data_pedido, preco) VALUES (2, 2, 2, 20, '2019-11-28', 200);
 INSERT INTO Pedido(id_pedido, id_cliente, id_item, quantidade, data_pedido, preco) VALUES (3, 3, 3, 30, '2019-11-28', 300);
@@ -193,7 +226,7 @@ INSERT INTO Pedido(id_pedido, id_cliente, id_item, quantidade, data_pedido, prec
 INSERT INTO Pedido(id_pedido, id_cliente, id_item, quantidade, data_pedido, preco) VALUES (14, 14, 14, 40, '2019-11-28', 400);
 INSERT INTO Pedido(id_pedido, id_cliente, id_item, quantidade, data_pedido, preco) VALUES (15, 15, 15, 50, '2019-11-28', 500);
 
-
+# Povoamento da tabela ListaDeVendas
 INSERT INTO ListaDeVendas(c_idgerada, id_pedido, hora, status) VALUES (1, 1, '09:10:23', 'Finalizado');
 INSERT INTO ListaDeVendas(c_idgerada, id_pedido, hora, status) VALUES (2, 2, '09:10:24', 'Finalizado');
 INSERT INTO ListaDeVendas(c_idgerada, id_pedido, hora, status) VALUES (3, 3, '09:10:25', 'Finalizado');
