@@ -22,3 +22,18 @@ WHERE l.nome LIKE 'Waypoint Moda System%' AND (l.nome LIKE '%North' OR l.nome LI
 SELECT p.id_cliente, p.preco
 FROM ListaDeVendas l JOIN Pedido p ON l.id_pedido = p.id_pedido
 WHERE l.status = 'Finalizado';
+
+# Selecionar o nome e o CNPJ dos fornecedores dos produtos de preços menores que 23.
+SELECT DISTINCT f.nome, f.cnpj
+FROM Fornecedor f JOIN Produto p ON p.cnpj_fornecedor = f.cnpj
+WHERE p.cnpj_fornecedor = f.cnpj AND p.preco < 23;
+
+# Selecionar o CNPJ de todas as lojas com estoque em Caicó
+SELECT DISTINCT l.cnpj
+FROM Loja l JOIN Estoque e ON e.cnpj = l.cnpj
+WHERE e.local LIKE '%Caicó%';
+
+# Selecionar os nomes de funcionários que constam como vendedores de 50 produtos em apenas uma nota fiscal.
+SELECT DISTINCT f.nome
+FROM Funcionario f JOIN Notafiscal nf ON nf.id_Funcionario = f.id_Funcionario
+WHERE nf.quantidade = 50;
