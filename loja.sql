@@ -97,7 +97,3 @@ CREATE TABLE ListaDeVendas(
 	PRIMARY KEY (c_idgerada),
 	FOREIGN KEY (id_pedido) REFERENCES Pedido(id_pedido)
 );
-#SET FOREIGN_KEY_CHECKS=0; -- Desabilitar Foreign Keys
-#SET FOREIGN_KEY_CHECKS=1; -- Habilitando Foreign Keys
-#UPDATE EMPREGADO SET supervisor=1 WHERE matricula=2;
-#detalhe FK_geralmente é inicializado NULL
